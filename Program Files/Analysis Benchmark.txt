@@ -1,0 +1,295 @@
+============================================================
+QB4OLAP Mental Health Analytics - Performance Benchmark
+============================================================
+2025-08-22 04:03:18,342 - INFO - Starting benchmark suite with 3 dataset sizes
+2025-08-22 04:03:18,342 - INFO - --- Dataset size = 10000 ---
+2025-08-22 04:03:18,699 - INFO - roll_up executed in 0.358s, results=4
+2025-08-22 04:03:19,834 - INFO - Saved observations: observation_plots\roll_up_observations__size10000__iter1.png
+2025-08-22 04:03:20,110 - INFO - roll_up executed in 0.276s, results=4
+2025-08-22 04:03:20,316 - INFO - Saved observations: observation_plots\roll_up_observations__size10000__iter2.png
+2025-08-22 04:03:20,521 - INFO - roll_up executed in 0.204s, results=4
+2025-08-22 04:03:20,696 - INFO - Saved observations: observation_plots\roll_up_observations__size10000__iter3.png
+2025-08-22 04:03:20,898 - INFO - roll_up executed in 0.202s, results=4
+2025-08-22 04:03:21,094 - INFO - Saved observations: observation_plots\roll_up_observations__size10000__iter4.png
+2025-08-22 04:03:21,295 - INFO - roll_up executed in 0.201s, results=4
+2025-08-22 04:03:21,480 - INFO - Saved observations: observation_plots\roll_up_observations__size10000__iter5.png
+2025-08-22 04:03:21,683 - INFO - roll_up executed in 0.203s, results=4
+2025-08-22 04:03:21,907 - INFO - Saved observations: observation_plots\roll_up_observations__size10000__iter6.png
+2025-08-22 04:03:22,121 - INFO - roll_up executed in 0.213s, results=4
+2025-08-22 04:03:22,311 - INFO - Saved observations: observation_plots\roll_up_observations__size10000__iter7.png
+2025-08-22 04:03:22,496 - INFO - roll_up executed in 0.185s, results=4
+2025-08-22 04:03:22,680 - INFO - Saved observations: observation_plots\roll_up_observations__size10000__iter8.png
+2025-08-22 04:03:22,886 - INFO - roll_up executed in 0.206s, results=4
+2025-08-22 04:03:23,124 - INFO - Saved observations: observation_plots\roll_up_observations__size10000__iter9.png
+2025-08-22 04:03:23,315 - INFO - roll_up executed in 0.192s, results=4
+2025-08-22 04:03:23,551 - INFO - Saved observations: observation_plots\roll_up_observations__size10000__iter10.png
+2025-08-22 04:03:23,561 - INFO -   roll_up: avg=0.224s, std=0.050s, min=0.185s, max=0.358s
+2025-08-22 04:03:23,659 - INFO - drill_down executed in 0.097s, results=49
+2025-08-22 04:03:24,393 - INFO - Saved observations: observation_plots\drill_down_observations__size10000__iter1.png
+2025-08-22 04:03:24,480 - INFO - drill_down executed in 0.087s, results=49
+2025-08-22 04:03:25,235 - INFO - Saved observations: observation_plots\drill_down_observations__size10000__iter2.png
+2025-08-22 04:03:25,332 - INFO - drill_down executed in 0.097s, results=49
+2025-08-22 04:03:26,091 - INFO - Saved observations: observation_plots\drill_down_observations__size10000__iter3.png
+2025-08-22 04:03:26,220 - INFO - drill_down executed in 0.128s, results=49
+2025-08-22 04:03:26,958 - INFO - Saved observations: observation_plots\drill_down_observations__size10000__iter4.png
+2025-08-22 04:03:27,052 - INFO - drill_down executed in 0.094s, results=49
+2025-08-22 04:03:27,759 - INFO - Saved observations: observation_plots\drill_down_observations__size10000__iter5.png
+2025-08-22 04:03:27,855 - INFO - drill_down executed in 0.097s, results=49
+2025-08-22 04:03:28,592 - INFO - Saved observations: observation_plots\drill_down_observations__size10000__iter6.png
+2025-08-22 04:03:28,687 - INFO - drill_down executed in 0.095s, results=49
+2025-08-22 04:03:29,702 - INFO - Saved observations: observation_plots\drill_down_observations__size10000__iter7.png
+2025-08-22 04:03:29,808 - INFO - drill_down executed in 0.106s, results=49
+2025-08-22 04:03:30,870 - INFO - Saved observations: observation_plots\drill_down_observations__size10000__iter8.png
+2025-08-22 04:03:31,010 - INFO - drill_down executed in 0.137s, results=49
+2025-08-22 04:03:31,757 - INFO - Saved observations: observation_plots\drill_down_observations__size10000__iter9.png
+2025-08-22 04:03:31,845 - INFO - drill_down executed in 0.087s, results=49
+2025-08-22 04:03:32,594 - INFO - Saved observations: observation_plots\drill_down_observations__size10000__iter10.png
+2025-08-22 04:03:32,595 - INFO -   drill_down: avg=0.102s, std=0.016s, min=0.087s, max=0.137s
+2025-08-22 04:03:32,681 - INFO - slice executed in 0.085s, results=7
+2025-08-22 04:03:32,894 - INFO - Saved observations: observation_plots\slice_observations__size10000__iter1.png
+2025-08-22 04:03:32,946 - INFO - slice executed in 0.052s, results=7
+2025-08-22 04:03:33,248 - INFO - Saved observations: observation_plots\slice_observations__size10000__iter2.png
+2025-08-22 04:03:33,302 - INFO - slice executed in 0.054s, results=7
+2025-08-22 04:03:33,580 - INFO - Saved observations: observation_plots\slice_observations__size10000__iter3.png
+2025-08-22 04:03:33,628 - INFO - slice executed in 0.048s, results=7
+2025-08-22 04:03:33,849 - INFO - Saved observations: observation_plots\slice_observations__size10000__iter4.png
+2025-08-22 04:03:33,892 - INFO - slice executed in 0.043s, results=7
+2025-08-22 04:03:34,112 - INFO - Saved observations: observation_plots\slice_observations__size10000__iter5.png
+2025-08-22 04:03:34,160 - INFO - slice executed in 0.048s, results=7
+2025-08-22 04:03:34,380 - INFO - Saved observations: observation_plots\slice_observations__size10000__iter6.png
+2025-08-22 04:03:34,421 - INFO - slice executed in 0.042s, results=7
+2025-08-22 04:03:34,684 - INFO - Saved observations: observation_plots\slice_observations__size10000__iter7.png
+2025-08-22 04:03:34,732 - INFO - slice executed in 0.047s, results=7
+2025-08-22 04:03:34,947 - INFO - Saved observations: observation_plots\slice_observations__size10000__iter8.png
+2025-08-22 04:03:34,997 - INFO - slice executed in 0.050s, results=7
+2025-08-22 04:03:35,227 - INFO - Saved observations: observation_plots\slice_observations__size10000__iter9.png
+2025-08-22 04:03:35,297 - INFO - slice executed in 0.070s, results=7
+2025-08-22 04:03:35,546 - INFO - Saved observations: observation_plots\slice_observations__size10000__iter10.png
+2025-08-22 04:03:35,546 - INFO -   slice: avg=0.054s, std=0.013s, min=0.042s, max=0.085s
+2025-08-22 04:03:35,671 - INFO - dice executed in 0.124s, results=4
+2025-08-22 04:03:35,852 - INFO - Saved observations: observation_plots\dice_observations__size10000__iter1.png
+2025-08-22 04:03:35,964 - INFO - dice executed in 0.112s, results=4
+2025-08-22 04:03:36,171 - INFO - Saved observations: observation_plots\dice_observations__size10000__iter2.png
+2025-08-22 04:03:36,287 - INFO - dice executed in 0.115s, results=4
+2025-08-22 04:03:36,472 - INFO - Saved observations: observation_plots\dice_observations__size10000__iter3.png
+2025-08-22 04:03:36,572 - INFO - dice executed in 0.100s, results=4
+2025-08-22 04:03:36,775 - INFO - Saved observations: observation_plots\dice_observations__size10000__iter4.png
+2025-08-22 04:03:36,872 - INFO - dice executed in 0.096s, results=4
+2025-08-22 04:03:37,064 - INFO - Saved observations: observation_plots\dice_observations__size10000__iter5.png
+2025-08-22 04:03:37,173 - INFO - dice executed in 0.105s, results=4
+2025-08-22 04:03:37,373 - INFO - Saved observations: observation_plots\dice_observations__size10000__iter6.png
+2025-08-22 04:03:37,473 - INFO - dice executed in 0.101s, results=4
+2025-08-22 04:03:37,656 - INFO - Saved observations: observation_plots\dice_observations__size10000__iter7.png
+2025-08-22 04:03:37,763 - INFO - dice executed in 0.106s, results=4
+2025-08-22 04:03:37,949 - INFO - Saved observations: observation_plots\dice_observations__size10000__iter8.png
+2025-08-22 04:03:38,050 - INFO - dice executed in 0.101s, results=4
+2025-08-22 04:03:38,231 - INFO - Saved observations: observation_plots\dice_observations__size10000__iter9.png
+2025-08-22 04:03:38,344 - INFO - dice executed in 0.113s, results=4
+2025-08-22 04:03:38,532 - INFO - Saved observations: observation_plots\dice_observations__size10000__iter10.png
+2025-08-22 04:03:38,532 - INFO -   dice: avg=0.107s, std=0.008s, min=0.096s, max=0.124s
+2025-08-22 04:03:38,532 - INFO - --- Dataset size = 50000 ---      
+2025-08-22 04:03:38,739 - INFO - roll_up executed in 0.207s, results=4
+2025-08-22 04:03:38,949 - INFO - Saved observations: observation_plots\roll_up_observations__size50000__iter1.png
+2025-08-22 04:03:39,162 - INFO - roll_up executed in 0.212s, results=4
+2025-08-22 04:03:39,358 - INFO - Saved observations: observation_plots\roll_up_observations__size50000__iter2.png
+2025-08-22 04:03:39,547 - INFO - roll_up executed in 0.189s, results=4
+2025-08-22 04:03:39,744 - INFO - Saved observations: observation_plots\roll_up_observations__size50000__iter3.png
+2025-08-22 04:03:39,929 - INFO - roll_up executed in 0.185s, results=4
+2025-08-22 04:03:40,115 - INFO - Saved observations: observation_plots\roll_up_observations__size50000__iter4.png
+2025-08-22 04:03:40,324 - INFO - roll_up executed in 0.209s, results=4
+2025-08-22 04:03:40,512 - INFO - Saved observations: observation_plots\roll_up_observations__size50000__iter5.png
+2025-08-22 04:03:40,713 - INFO - roll_up executed in 0.185s, results=4
+2025-08-22 04:03:40,931 - INFO - Saved observations: observation_plots\roll_up_observations__size50000__iter6.png
+2025-08-22 04:03:41,142 - INFO - roll_up executed in 0.210s, results=4
+2025-08-22 04:03:41,338 - INFO - Saved observations: observation_plots\roll_up_observations__size50000__iter7.png
+2025-08-22 04:03:41,534 - INFO - roll_up executed in 0.195s, results=4
+2025-08-22 04:03:41,792 - INFO - Saved observations: observation_plots\roll_up_observations__size50000__iter8.png
+2025-08-22 04:03:42,013 - INFO - roll_up executed in 0.221s, results=4
+2025-08-22 04:03:42,198 - INFO - Saved observations: observation_plots\roll_up_observations__size50000__iter9.png
+2025-08-22 04:03:42,399 - INFO - roll_up executed in 0.201s, results=4
+2025-08-22 04:03:42,583 - INFO - Saved observations: observation_plots\roll_up_observations__size50000__iter10.png
+2025-08-22 04:03:42,583 - INFO -   roll_up: avg=0.201s, std=0.012s, min=0.185s, max=0.221s
+2025-08-22 04:03:42,674 - INFO - drill_down executed in 0.091s, results=49
+2025-08-22 04:03:43,390 - INFO - Saved observations: observation_plots\drill_down_observations__size50000__iter1.png
+2025-08-22 04:03:43,545 - INFO - drill_down executed in 0.155s, results=49
+2025-08-22 04:03:44,297 - INFO - Saved observations: observation_plots\drill_down_observations__size50000__iter2.png
+2025-08-22 04:03:44,385 - INFO - drill_down executed in 0.088s, results=49
+2025-08-22 04:03:45,125 - INFO - Saved observations: observation_plots\drill_down_observations__size50000__iter3.png
+2025-08-22 04:03:45,221 - INFO - drill_down executed in 0.095s, results=49
+2025-08-22 04:03:45,930 - INFO - Saved observations: observation_plots\drill_down_observations__size50000__iter4.png
+2025-08-22 04:03:46,016 - INFO - drill_down executed in 0.086s, results=49
+2025-08-22 04:03:46,774 - INFO - Saved observations: observation_plots\drill_down_observations__size50000__iter5.png
+2025-08-22 04:03:46,880 - INFO - drill_down executed in 0.106s, results=49
+2025-08-22 04:03:47,607 - INFO - Saved observations: observation_plots\drill_down_observations__size50000__iter6.png
+2025-08-22 04:03:47,698 - INFO - drill_down executed in 0.091s, results=49
+2025-08-22 04:03:48,403 - INFO - Saved observations: observation_plots\drill_down_observations__size50000__iter7.png
+2025-08-22 04:03:48,487 - INFO - drill_down executed in 0.083s, results=49
+2025-08-22 04:03:49,178 - INFO - Saved observations: observation_plots\drill_down_observations__size50000__iter8.png
+2025-08-22 04:03:49,266 - INFO - drill_down executed in 0.088s, results=49
+2025-08-22 04:03:50,009 - INFO - Saved observations: observation_plots\drill_down_observations__size50000__iter9.png
+2025-08-22 04:03:50,119 - INFO - drill_down executed in 0.110s, results=49
+2025-08-22 04:03:50,856 - INFO - Saved observations: observation_plots\drill_down_observations__size50000__iter10.png
+2025-08-22 04:03:50,856 - INFO -   drill_down: avg=0.099s, std=0.020s, min=0.083s, max=0.155s
+2025-08-22 04:03:50,902 - INFO - slice executed in 0.046s, results=7
+2025-08-22 04:03:51,263 - INFO - Saved observations: observation_plots\slice_observations__size50000__iter1.png
+2025-08-22 04:03:51,308 - INFO - slice executed in 0.045s, results=7
+2025-08-22 04:03:51,579 - INFO - Saved observations: observation_plots\slice_observations__size50000__iter2.png
+2025-08-22 04:03:51,636 - INFO - slice executed in 0.057s, results=7
+2025-08-22 04:03:51,914 - INFO - Saved observations: observation_plots\slice_observations__size50000__iter3.png
+2025-08-22 04:03:51,954 - INFO - slice executed in 0.040s, results=7
+2025-08-22 04:03:52,222 - INFO - Saved observations: observation_plots\slice_observations__size50000__iter4.png
+2025-08-22 04:03:52,254 - INFO - slice executed in 0.031s, results=7
+2025-08-22 04:03:52,519 - INFO - Saved observations: observation_plots\slice_observations__size50000__iter5.png
+2025-08-22 04:03:52,553 - INFO - slice executed in 0.033s, results=7
+2025-08-22 04:03:52,811 - INFO - Saved observations: observation_plots\slice_observations__size50000__iter6.png
+2025-08-22 04:03:52,853 - INFO - slice executed in 0.042s, results=7
+2025-08-22 04:03:53,114 - INFO - Saved observations: observation_plots\slice_observations__size50000__iter7.png
+2025-08-22 04:03:53,154 - INFO - slice executed in 0.039s, results=7
+2025-08-22 04:03:53,422 - INFO - Saved observations: observation_plots\slice_observations__size50000__iter8.png
+2025-08-22 04:03:53,486 - INFO - slice executed in 0.064s, results=7
+2025-08-22 04:03:53,789 - INFO - Saved observations: observation_plots\slice_observations__size50000__iter9.png
+2025-08-22 04:03:53,832 - INFO - slice executed in 0.042s, results=7
+2025-08-22 04:03:54,079 - INFO - Saved observations: observation_plots\slice_observations__size50000__iter10.png
+2025-08-22 04:03:54,079 - INFO -   slice: avg=0.044s, std=0.010s, min=0.031s, max=0.064s
+2025-08-22 04:03:54,217 - INFO - dice executed in 0.127s, results=4
+2025-08-22 04:03:54,417 - INFO - Saved observations: observation_plots\dice_observations__size50000__iter1.png
+2025-08-22 04:03:54,536 - INFO - dice executed in 0.118s, results=4
+2025-08-22 04:03:54,718 - INFO - Saved observations: observation_plots\dice_observations__size50000__iter2.png
+2025-08-22 04:03:54,832 - INFO - dice executed in 0.114s, results=4
+2025-08-22 04:03:55,047 - INFO - Saved observations: observation_plots\dice_observations__size50000__iter3.png
+2025-08-22 04:03:55,169 - INFO - dice executed in 0.120s, results=4
+2025-08-22 04:03:55,397 - INFO - Saved observations: observation_plots\dice_observations__size50000__iter4.png
+2025-08-22 04:03:55,508 - INFO - dice executed in 0.110s, results=4
+2025-08-22 04:03:55,732 - INFO - Saved observations: observation_plots\dice_observations__size50000__iter5.png
+2025-08-22 04:03:55,851 - INFO - dice executed in 0.120s, results=4
+2025-08-22 04:03:56,062 - INFO - Saved observations: observation_plots\dice_observations__size50000__iter6.png
+2025-08-22 04:03:56,184 - INFO - dice executed in 0.122s, results=4
+2025-08-22 04:03:56,396 - INFO - Saved observations: observation_plots\dice_observations__size50000__iter7.png
+2025-08-22 04:03:56,509 - INFO - dice executed in 0.111s, results=4
+2025-08-22 04:03:56,715 - INFO - Saved observations: observation_plots\dice_observations__size50000__iter8.png
+2025-08-22 04:03:56,831 - INFO - dice executed in 0.117s, results=4
+2025-08-22 04:03:57,032 - INFO - Saved observations: observation_plots\dice_observations__size50000__iter9.png
+2025-08-22 04:03:57,152 - INFO - dice executed in 0.120s, results=4
+2025-08-22 04:03:57,360 - INFO - Saved observations: observation_plots\dice_observations__size50000__iter10.png
+2025-08-22 04:03:57,360 - INFO -   dice: avg=0.118s, std=0.005s, min=0.110s, max=0.127s
+2025-08-22 04:03:57,360 - INFO - --- Dataset size = 200000 ---     
+2025-08-22 04:03:57,580 - INFO - roll_up executed in 0.220s, results=4
+2025-08-22 04:03:57,811 - INFO - Saved observations: observation_plots\roll_up_observations__size200000__iter1.png
+2025-08-22 04:03:58,042 - INFO - roll_up executed in 0.230s, results=4
+2025-08-22 04:03:58,259 - INFO - Saved observations: observation_plots\roll_up_observations__size200000__iter2.png
+2025-08-22 04:03:58,506 - INFO - roll_up executed in 0.248s, results=4
+2025-08-22 04:03:58,728 - INFO - Saved observations: observation_plots\roll_up_observations__size200000__iter3.png
+2025-08-22 04:03:58,963 - INFO - roll_up executed in 0.219s, results=4
+2025-08-22 04:03:59,162 - INFO - Saved observations: observation_plots\roll_up_observations__size200000__iter4.png
+2025-08-22 04:03:59,383 - INFO - roll_up executed in 0.222s, results=4
+2025-08-22 04:03:59,608 - INFO - Saved observations: observation_plots\roll_up_observations__size200000__iter5.png
+2025-08-22 04:03:59,858 - INFO - roll_up executed in 0.250s, results=4
+2025-08-22 04:04:00,061 - INFO - Saved observations: observation_plots\roll_up_observations__size200000__iter6.png
+2025-08-22 04:04:00,282 - INFO - roll_up executed in 0.221s, results=4
+2025-08-22 04:04:00,509 - INFO - Saved observations: observation_plots\roll_up_observations__size200000__iter7.png
+2025-08-22 04:04:00,777 - INFO - roll_up executed in 0.269s, results=4
+2025-08-22 04:04:01,016 - INFO - Saved observations: observation_plots\roll_up_observations__size200000__iter8.png
+2025-08-22 04:04:01,334 - INFO - roll_up executed in 0.318s, results=4
+2025-08-22 04:04:01,671 - INFO - Saved observations: observation_plots\roll_up_observations__size200000__iter9.png
+2025-08-22 04:04:01,986 - INFO - roll_up executed in 0.312s, results=4
+2025-08-22 04:04:02,226 - INFO - Saved observations: observation_plots\roll_up_observations__size200000__iter10.png
+2025-08-22 04:04:02,227 - INFO -   roll_up: avg=0.251s, std=0.036s, min=0.219s, max=0.318s
+2025-08-22 04:04:02,328 - INFO - drill_down executed in 0.100s, results=49
+2025-08-22 04:04:03,196 - INFO - Saved observations: observation_plots\drill_down_observations__size200000__iter1.png
+2025-08-22 04:04:03,296 - INFO - drill_down executed in 0.101s, results=49
+2025-08-22 04:04:04,138 - INFO - Saved observations: observation_plots\drill_down_observations__size200000__iter2.png
+2025-08-22 04:04:04,256 - INFO - drill_down executed in 0.108s, results=49
+2025-08-22 04:04:05,027 - INFO - Saved observations: observation_plots\drill_down_observations__size200000__iter3.png
+2025-08-22 04:04:05,131 - INFO - drill_down executed in 0.105s, results=49
+2025-08-22 04:04:05,937 - INFO - Saved observations: observation_plots\drill_down_observations__size200000__iter4.png
+2025-08-22 04:04:06,031 - INFO - drill_down executed in 0.082s, results=49
+2025-08-22 04:04:06,866 - INFO - Saved observations: observation_plots\drill_down_observations__size200000__iter5.png
+2025-08-22 04:04:06,960 - INFO - drill_down executed in 0.094s, results=49
+2025-08-22 04:04:07,693 - INFO - Saved observations: observation_plots\drill_down_observations__size200000__iter6.png
+2025-08-22 04:04:07,797 - INFO - drill_down executed in 0.104s, results=49
+2025-08-22 04:04:08,581 - INFO - Saved observations: observation_plots\drill_down_observations__size200000__iter7.png
+2025-08-22 04:04:08,675 - INFO - drill_down executed in 0.093s, results=49
+2025-08-22 04:04:09,525 - INFO - Saved observations: observation_plots\drill_down_observations__size200000__iter8.png
+2025-08-22 04:04:09,628 - INFO - drill_down executed in 0.102s, results=49
+2025-08-22 04:04:10,514 - INFO - Saved observations: observation_plots\drill_down_observations__size200000__iter9.png
+2025-08-22 04:04:10,665 - INFO - drill_down executed in 0.151s, results=49
+2025-08-22 04:04:11,512 - INFO - Saved observations: observation_plots\drill_down_observations__size200000__iter10.png
+2025-08-22 04:04:11,513 - INFO -   drill_down: avg=0.104s, std=0.017s, min=0.082s, max=0.151s
+2025-08-22 04:04:11,567 - INFO - slice executed in 0.053s, results=7
+2025-08-22 04:04:11,818 - INFO - Saved observations: observation_plots\slice_observations__size200000__iter1.png
+2025-08-22 04:04:11,858 - INFO - slice executed in 0.039s, results=7
+2025-08-22 04:04:12,256 - INFO - Saved observations: observation_plots\slice_observations__size200000__iter2.png
+2025-08-22 04:04:12,289 - INFO - slice executed in 0.033s, results=7
+2025-08-22 04:04:12,563 - INFO - Saved observations: observation_plots\slice_observations__size200000__iter3.png
+2025-08-22 04:04:12,609 - INFO - slice executed in 0.045s, results=7
+2025-08-22 04:04:12,845 - INFO - Saved observations: observation_plots\slice_observations__size200000__iter4.png
+2025-08-22 04:04:12,883 - INFO - slice executed in 0.038s, results=7
+2025-08-22 04:04:13,158 - INFO - Saved observations: observation_plots\slice_observations__size200000__iter5.png
+2025-08-22 04:04:13,195 - INFO - slice executed in 0.036s, results=7
+2025-08-22 04:04:13,439 - INFO - Saved observations: observation_plots\slice_observations__size200000__iter6.png
+2025-08-22 04:04:13,503 - INFO - slice executed in 0.064s, results=7
+2025-08-22 04:04:13,776 - INFO - Saved observations: observation_plots\slice_observations__size200000__iter7.png
+2025-08-22 04:04:13,816 - INFO - slice executed in 0.040s, results=7
+2025-08-22 04:04:14,079 - INFO - Saved observations: observation_plots\slice_observations__size200000__iter8.png
+2025-08-22 04:04:14,131 - INFO - slice executed in 0.052s, results=7
+2025-08-22 04:04:14,394 - INFO - Saved observations: observation_plots\slice_observations__size200000__iter9.png
+2025-08-22 04:04:14,442 - INFO - slice executed in 0.047s, results=7
+2025-08-22 04:04:14,681 - INFO - Saved observations: observation_plots\slice_observations__size200000__iter10.png
+2025-08-22 04:04:14,681 - INFO -   slice: avg=0.045s, std=0.009s, min=0.033s, max=0.064s
+2025-08-22 04:04:14,805 - INFO - dice executed in 0.123s, results=4
+2025-08-22 04:04:15,016 - INFO - Saved observations: observation_plots\dice_observations__size200000__iter1.png
+2025-08-22 04:04:15,141 - INFO - dice executed in 0.126s, results=4
+2025-08-22 04:04:15,346 - INFO - Saved observations: observation_plots\dice_observations__size200000__iter2.png
+2025-08-22 04:04:15,467 - INFO - dice executed in 0.121s, results=4
+2025-08-22 04:04:15,682 - INFO - Saved observations: observation_plots\dice_observations__size200000__iter3.png
+2025-08-22 04:04:15,791 - INFO - dice executed in 0.107s, results=4
+2025-08-22 04:04:16,004 - INFO - Saved observations: observation_plots\dice_observations__size200000__iter4.png
+2025-08-22 04:04:16,125 - INFO - dice executed in 0.119s, results=4
+2025-08-22 04:04:16,363 - INFO - Saved observations: observation_plots\dice_observations__size200000__iter5.png
+2025-08-22 04:04:16,471 - INFO - dice executed in 0.107s, results=4
+2025-08-22 04:04:16,683 - INFO - Saved observations: observation_plots\dice_observations__size200000__iter6.png
+2025-08-22 04:04:16,797 - INFO - dice executed in 0.114s, results=4
+2025-08-22 04:04:16,995 - INFO - Saved observations: observation_plots\dice_observations__size200000__iter7.png
+2025-08-22 04:04:17,100 - INFO - dice executed in 0.105s, results=4
+2025-08-22 04:04:17,311 - INFO - Saved observations: observation_plots\dice_observations__size200000__iter8.png
+2025-08-22 04:04:17,423 - INFO - dice executed in 0.112s, results=4
+2025-08-22 04:04:17,632 - INFO - Saved observations: observation_plots\dice_observations__size200000__iter9.png
+2025-08-22 04:04:17,740 - INFO - dice executed in 0.108s, results=4
+2025-08-22 04:04:17,945 - INFO - Saved observations: observation_plots\dice_observations__size200000__iter10.png
+2025-08-22 04:04:17,946 - INFO -   dice: avg=0.114s, std=0.007s, min=0.105s, max=0.126s
+2025-08-22 04:04:17,969 - INFO - Performance report generated.
+
+============================================================       
+PERFORMANCE SUMMARY REPORT
+============================================================       
+ dataset_sizes query_types  iterations  avg_time  std_time  min_time  max_time  median_time
+         10000        dice          10    0.1073    0.0084    0.0965    0.1238       0.1056
+         10000  drill_down          10    0.1025    0.0170    0.0870    0.1373       0.0968
+         10000     roll_up          10    0.2239    0.0532    0.1855    0.3576       0.2032
+         10000       slice          10    0.0539    0.0134    0.0417    0.0848       0.0494
+         50000        dice          10    0.1180    0.0052    0.1098    0.1274       0.1191
+         50000  drill_down          10    0.0994    0.0212    0.0834    0.1545       0.0912
+         50000     roll_up          10    0.2014    0.0125    0.1848    0.2210       0.2041
+         50000       slice          10    0.0439    0.0101    0.0312    0.0639       0.0422
+        200000        dice          10    0.1143    0.0076    0.1055    0.1255       0.1130
+        200000  drill_down          10    0.1039    0.0181    0.0817    0.1507       0.1013
+        200000     roll_up          10    0.2508    0.0377    0.2191    0.3181       0.2389
+        200000       slice          10    0.0447    0.0095    0.0326    0.0641       0.0425
+2025-08-22 04:04:19,507 - INFO - Benchmark results exported to benchmark_results.json
+
+        200000       slice          10    0.0447    0.0095    0.0326    0.0641       0.0425
+2025-08-22 04:04:19,507 - INFO - Benchmark results exported to benchmark_results.json
+
+6    0.0641       0.0425
+2025-08-22 04:04:19,507 - INFO - Benchmark results exported to benchmark_results.json
+
+hmark_results.json
+
+
+============================================================       
+BENCHMARK COMPLETE - Results saved to benchmark_results.json       
+Observation images saved in: observation_plots/
+Benchmark plots saved in:   benchmark_plots/
+Observation images saved in: observation_plots/
+Benchmark plots saved in:   benchmark_plots/
+============================================================ 

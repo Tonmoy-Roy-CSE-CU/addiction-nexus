@@ -1,0 +1,292 @@
+@prefix adnx: <https://purl.archive.org/addiction-nexus#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix qb4o: <http://purl.org/qb4olap/cubes#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+
+adnx:MentalHealthDataSet a qb:DataSet ;
+    rdfs:label "Mental Health Data Set"@en ;
+    rdfs:comment "QB dataset for mental health analytics" ;
+    dct:title "Addiction Nexus Knowledge Graph (ADNXKG) - Version 3.0 - 50,000 Records" ;
+    dct:description "A comprehensive knowledge graph comprising 50,000 mental health and lifestyle records, designed for multidimensional OLAP analytics and adhering to FAIR principles (Findable, Accessible, Interoperable, Reusable). This dataset integrates a TBox (ontological structure) and ABox (instance data) in RDF/TTL format, utilizing QB4OLAP and OWL vocabularies for semantic interoperability. It includes dimensions such as age, gender, country, occupation, severity, and stress levels, with measures like physical activity hours, sleep hours, social media usage, and work hours. The dataset is licensed under Creative Commons Attribution 4.0 International (CC-BY 4.0) and is accessible via a persistent DOI. Metadata includes title, description, creator (Tonmoy Roy), publisher (University of Chittagong), and access URL, ensuring discoverability and reusability. This resource supports addiction research, enabling SPARQL-driven analysis and integration with Linked Open Data (LOD) sources like Wikidata. Uploaded on August 24, 2025, for open-access distribution and further research engagement." ;
+    dcat:accessURL <https://zenodo.org/records/[new-record-id]/files/tbox_v3.ttl> ;
+    dct:license <http://creativecommons.org/licenses/by/4.0/> ;
+    dct:creator "Tonmoy Roy" ;
+    dct:publisher "University of Chittagong" .
+
+adnx:AgeLevel a qb4o:Level ;
+    rdfs:label "Individual Age Level"@en ;
+    qb4o:inHierarchy adnx:AgeHierarchy ;
+    qb4o:parentLevel adnx:AgeGroupLevel .
+
+adnx:CountryLevel a qb4o:Level ;
+    rdfs:label "Country Level"@en ;
+    qb4o:inHierarchy adnx:CountryHierarchy .
+
+adnx:GenderLevel a qb4o:Level ;
+    rdfs:label "Gender Level"@en ;
+    qb4o:inHierarchy adnx:GenderHierarchy .
+
+adnx:MentalHealthCube a qb4o:Cube ;
+    rdfs:label "Mental Health Analysis Cube"@en ;
+    qb4o:dimension adnx:ageDimension,
+        adnx:countryDimension,
+        adnx:genderDimension,
+        adnx:occupationDimension,
+        adnx:severityDimension,
+        adnx:stressLevelDimension ;
+    qb4o:measure adnx:ageMeasure,
+        adnx:physicalActivityMeasure,
+        adnx:sleepHoursMeasure,
+        adnx:socialMediaMeasure,
+        adnx:workHoursMeasure ;
+    rdfs:comment "QB4OLAP cube for mental health analytics" .
+
+adnx:OccupationLevel a qb4o:Level ;
+    rdfs:label "Occupation Level"@en ;
+    qb4o:inHierarchy adnx:OccupationHierarchy .
+
+adnx:SeverityLevel a qb4o:Level ;
+    rdfs:label "Severity Level"@en ;
+    qb4o:inHierarchy adnx:SeverityHierarchy .
+
+adnx:StressLevelBase a qb4o:Level ;
+    rdfs:label "Stress Level"@en ;
+    qb4o:inHierarchy adnx:StressHierarchy .
+
+adnx:avgFunction a qb4o:AggregateFunction ;
+    rdfs:label "Average Function"@en .
+
+adnx:countFunction a qb4o:AggregateFunction ;
+    rdfs:label "Count Function"@en .
+
+adnx:hasAge a owl:DatatypeProperty ;
+    rdfs:domain adnx:Person ;
+    rdfs:range xsd:integer .
+
+adnx:hasAlcoholConsumption a owl:ObjectProperty ;
+    rdfs:domain adnx:Lifestyle ;
+    rdfs:range adnx:AlcoholConsumption .
+
+adnx:hasConsultationHistory a owl:ObjectProperty ;
+    rdfs:domain adnx:MentalHealth ;
+    rdfs:range adnx:Consultation .
+
+adnx:hasCountry a owl:ObjectProperty ;
+    rdfs:domain adnx:Person ;
+    rdfs:range adnx:Country .
+
+adnx:hasDietQuality a owl:ObjectProperty ;
+    rdfs:domain adnx:Lifestyle ;
+    rdfs:range adnx:DietQuality .
+
+adnx:hasGender a owl:ObjectProperty ;
+    rdfs:domain adnx:Person ;
+    rdfs:range adnx:Gender .
+
+adnx:hasLifestyle a owl:ObjectProperty ;
+    rdfs:domain adnx:Person ;
+    rdfs:range adnx:Lifestyle .
+
+adnx:hasMedicationUsage a owl:ObjectProperty ;
+    rdfs:domain adnx:MentalHealth ;
+    rdfs:range adnx:Medication .
+
+adnx:hasMentalHealth a owl:ObjectProperty ;
+    rdfs:domain adnx:Person ;
+    rdfs:range adnx:MentalHealth .
+
+adnx:hasObservation a owl:ObjectProperty ;
+    rdfs:domain adnx:Person ;
+    rdfs:range adnx:Observation .
+
+adnx:hasOccupation a owl:ObjectProperty ;
+    rdfs:domain adnx:Person ;
+    rdfs:range adnx:Occupation .
+
+adnx:hasPhysicalActivityHours a owl:DatatypeProperty ;
+    rdfs:domain adnx:Observation ;
+    rdfs:range xsd:integer .
+
+adnx:hasSeverity a owl:ObjectProperty ;
+    rdfs:domain adnx:MentalHealth ;
+    rdfs:range adnx:Severity .
+
+adnx:hasSleepHours a owl:DatatypeProperty ;
+    rdfs:domain adnx:Observation ;
+    rdfs:range xsd:float .
+
+adnx:hasSmokingHabit a owl:ObjectProperty ;
+    rdfs:domain adnx:Lifestyle ;
+    rdfs:range adnx:SmokingHabit .
+
+adnx:hasSocialMediaUsage a owl:DatatypeProperty ;
+    rdfs:domain adnx:Observation ;
+    rdfs:range xsd:float .
+
+adnx:hasStressLevel a owl:ObjectProperty ;
+    rdfs:domain adnx:MentalHealth ;
+    rdfs:range adnx:StressLevel .
+
+adnx:hasWorkHours a owl:DatatypeProperty ;
+    rdfs:domain adnx:Observation ;
+    rdfs:range xsd:integer .
+
+adnx:maxFunction a qb4o:AggregateFunction ;
+    rdfs:label "Maximum Function"@en .
+
+adnx:minFunction a qb4o:AggregateFunction ;
+    rdfs:label "Minimum Function"@en .
+
+adnx:observationHasAlcoholConsumption a owl:ObjectProperty ;
+    rdfs:domain adnx:Observation ;
+    rdfs:range adnx:AlcoholConsumption .
+
+adnx:observationHasDietQuality a owl:ObjectProperty ;
+    rdfs:domain adnx:Observation ;
+    rdfs:range adnx:DietQuality .
+
+adnx:observationHasSmokingHabit a owl:ObjectProperty ;
+    rdfs:domain adnx:Observation ;
+    rdfs:range adnx:SmokingHabit .
+
+adnx:sumFunction a qb4o:AggregateFunction ;
+    rdfs:label "Sum Function"@en .
+
+adnx:AgeDimension a owl:Class ;
+    rdfs:label "Age Dimension"@en,
+        "AgeDimension"@en .
+
+adnx:AgeGroupLevel a qb4o:Level ;
+    rdfs:label "Age Group Level"@en ;
+    qb4o:inHierarchy adnx:AgeHierarchy .
+
+adnx:Consultation a owl:Class ;
+    rdfs:label "Consultation"@en .
+
+adnx:Medication a owl:Class ;
+    rdfs:label "Medication"@en .
+
+adnx:ageDimension a qb:DimensionProperty,
+        qb4o:LevelProperty ;
+    rdfs:label "age Dimension"@en ;
+    qb4o:inHierarchy adnx:AgeHierarchy ;
+    rdfs:range adnx:AgeDimension .
+
+adnx:ageMeasure a qb:MeasureProperty,
+        qb4o:Measure ;
+    rdfs:label "Age Measure"@en ;
+    rdfs:range xsd:integer .
+
+adnx:countryDimension a qb:DimensionProperty,
+        qb4o:LevelProperty ;
+    rdfs:label "country Dimension"@en ;
+    qb4o:inHierarchy adnx:CountryHierarchy ;
+    rdfs:range adnx:Country .
+
+adnx:genderDimension a qb:DimensionProperty,
+        qb4o:LevelProperty ;
+    rdfs:label "gender Dimension"@en ;
+    qb4o:inHierarchy adnx:GenderHierarchy ;
+    rdfs:range adnx:Gender .
+
+adnx:occupationDimension a qb:DimensionProperty,
+        qb4o:LevelProperty ;
+    rdfs:label "occupation Dimension"@en ;
+    qb4o:inHierarchy adnx:OccupationHierarchy ;
+    rdfs:range adnx:Occupation .
+
+adnx:physicalActivityMeasure a qb:MeasureProperty,
+        qb4o:Measure ;
+    rdfs:label "Physical Activity Measure"@en ;
+    rdfs:range xsd:integer .
+
+adnx:severityDimension a qb:DimensionProperty,
+        qb4o:LevelProperty ;
+    rdfs:label "severity Dimension"@en ;
+    qb4o:inHierarchy adnx:SeverityHierarchy ;
+    rdfs:range adnx:Severity .
+
+adnx:sleepHoursMeasure a qb:MeasureProperty,
+        qb4o:Measure ;
+    rdfs:label "Sleep Hours Measure"@en ;
+    rdfs:range xsd:float .
+
+adnx:socialMediaMeasure a qb:MeasureProperty,
+        qb4o:Measure ;
+    rdfs:label "Social Media Usage Measure"@en ;
+    rdfs:range xsd:float .
+
+adnx:stressLevelDimension a qb:DimensionProperty,
+        qb4o:LevelProperty ;
+    rdfs:label "stressLevel Dimension"@en ;
+    qb4o:inHierarchy adnx:StressHierarchy ;
+    rdfs:range adnx:StressLevel .
+
+adnx:workHoursMeasure a qb:MeasureProperty,
+        qb4o:Measure ;
+    rdfs:label "Work Hours Measure"@en ;
+    rdfs:range xsd:integer .
+
+adnx:AlcoholConsumption a owl:Class ;
+    rdfs:label "AlcoholConsumption"@en .
+
+adnx:Country a owl:Class ;
+    rdfs:label "Country"@en .
+
+adnx:CountryHierarchy a qb4o:Hierarchy ;
+    rdfs:label "CountryHierarchy"@en .
+
+adnx:DietQuality a owl:Class ;
+    rdfs:label "DietQuality"@en .
+
+adnx:Gender a owl:Class ;
+    rdfs:label "Gender"@en .
+
+adnx:GenderHierarchy a qb4o:Hierarchy ;
+    rdfs:label "GenderHierarchy"@en .
+
+adnx:Occupation a owl:Class ;
+    rdfs:label "Occupation"@en .
+
+adnx:OccupationHierarchy a qb4o:Hierarchy ;
+    rdfs:label "OccupationHierarchy"@en .
+
+adnx:Severity a owl:Class ;
+    rdfs:label "Severity"@en .
+
+adnx:SeverityHierarchy a qb4o:Hierarchy ;
+    rdfs:label "SeverityHierarchy"@en .
+
+adnx:SmokingHabit a owl:Class ;
+    rdfs:label "SmokingHabit"@en .
+
+adnx:StressHierarchy a qb4o:Hierarchy ;
+    rdfs:label "StressHierarchy"@en .
+
+adnx:StressLevel a owl:Class ;
+    rdfs:label "StressLevel"@en .
+
+adnx:AgeHierarchy a qb4o:Hierarchy ;
+    rdfs:label "AgeHierarchy"@en .
+
+adnx:Lifestyle a owl:Class ;
+    rdfs:label "Lifestyle"@en ;
+    rdfs:comment "Captures lifestyle factors"@en .
+
+adnx:MentalHealth a owl:Class ;
+    rdfs:label "Mental Health"@en ;
+    rdfs:comment "Captures mental health condition details"@en .
+
+adnx:Person a owl:Class ;
+    rdfs:label "Person"@en ;
+    rdfs:comment "Represents an individual with demographic attributes"@en .
+
+adnx:Observation a owl:Class ;
+    rdfs:label "Observation"@en ;
+    rdfs:comment "Combined QB/QB4OLAP Observation for measurements"@en ;
+    rdfs:subClassOf qb:Observation,
+        qb4o:Observation .
